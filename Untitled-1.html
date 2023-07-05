@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AlperSocial</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: "Comic Sans MS", cursive;
+    }
+
+    #videoContainer {
+      text-align: center;
+    }
+
+    #clickText {
+      font-size: 24px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="videoContainer" style="display: none;">
+    <iframe id="youtubeVideo" width="720" height="900" src="" frameborder="0" class="hidden" autoplay="true"></iframe>
+  </div>
+
+  <h1 id="clickText">
+    click anywhere
+  </h1>
+  <div id="gent">
+    <img src="https://fishlock.boo/assets/gentleman.gif">
+  </div>
+
+  <script>
+    // Play YouTube video when the page is clicked
+    document.addEventListener("click", function() {
+      var videoContainer = document.getElementById("videoContainer");
+      var youtubeVideo = document.getElementById("youtubeVideo");
+
+      // Replace "https://www.youtube.com/embed/rAxrB-XAWSA?autoplay=1" with the actual YouTube video URL you want to play
+      youtubeVideo.src = "untitled.mp4";
+      
+      // Show the video container
+      videoContainer.style.display = "block";
+
+      // Hide the click text
+      clickText.style.display = "none";
+      gent.style.display = "none";
+
+      // Redirect to a website after 10 seconds and 10 milliseconds
+      setTimeout(function() {
+        window.location.href = "https://e-z.bio/alper"; // Replace with the desired website URL
+      }, 10100);
+    });
+  </script>
+</body>
+</html>
